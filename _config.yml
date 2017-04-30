@@ -1,0 +1,12 @@
+title: Konstantin Svichkar
+email: 2012kostyan@gmail.com
+description: my portfolio site
+
+port: 5000
+
+markdown: kramdown
+permalink: pretty
+
+sass:
+  sass_dir: assets/css
+  style: :nested

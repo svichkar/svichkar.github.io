@@ -1,0 +1,36 @@
+@mixin item($url)
+  background: url($url) no-repeat center white
+  background-size: contain
+  height: 250px
+  width: 250px
+  display: inline-block
+  border: 1px dashed #ddd
+  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee
+  margin: 3px
+  &:hover
+    transform: scale(1.1, 1.1) skew(-10deg,10deg)
+    transform:  rotate(45deg)
+    background-color: transparentize(azure, 0.1)
+
+
+.item-java
+  @include item('/assets/img/work/java-logo.png')
+
+.item-hibernate
+  @include item('/assets/img/work/hibernate.png   ')
+
+.item-spring
+  @include item('/assets/img/work/spring-logo.png')
+
+.item-sql
+  @include item('/assets/img/work/SQL.png')
+
+.item-no-sql
+  @include item('/assets/img/work/nosql_logo.png')
+
+.item-jboss
+  @include item('/assets/img/work/JBoss_logo.svg.png')
+
+.items
+  margin: auto
+  text-align: center
